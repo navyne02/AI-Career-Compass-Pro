@@ -1,3 +1,25 @@
-🚀 AI Career Compass Pro (Advanced AI Version)AI Career Compass Pro is a sophisticated resume analysis engine designed to bridge the gap between candidate profiles and industry requirements. Unlike traditional ATS systems that rely on rigid keyword matching, this project leverages Transformer-based Deep Learning and Semantic Search to understand the context and intent behind a professional's experience.🧠 Core TechnologiesSBERT (Sentence-BERT): Utilizes the all-MiniLM-L6-v2 transformer model to generate high-dimensional semantic embeddings, allowing the system to understand that "Cloud Infrastructure" and "AWS/Azure" are contextually related.Hybrid Similarity Engine: A dual-layered scoring logic that combines:Semantic Cosine Similarity: Measures the conceptual closeness of ideas.Ontology-based Lexical Matching: Ensures technical precision using a predefined skill taxonomy.Skill Ontology: A hierarchical mapping system that categorizes raw skills into specific industry domains (e.g., Mapping "PyTorch" $\rightarrow$ "Deep Learning" $\rightarrow$ "Artificial Intelligence").Streamlit: Powering an advanced, interactive UI for seamless resume uploads and real-time visualization of match scores.🛠️ Execution & SetupEnsure you have Python 3.8+ installed.Install dependencies:Bashpip install -r requirements.txt
-Launch the application:Bashstreamlit run app.py
-[!NOTE]On the first execution, the system will automatically download the all-MiniLM-L6-v2 model (approx. 80MB). This may take a few minutes depending on your connection.📈 System Architecture & LogicThe system processes data through a structured pipeline:Parsing: Extracting text from PDF/Docx resumes.Vectorization: Converting text into semantic vectors via SBERT.Cross-Referencing: Comparing candidate vectors against Job Description vectors.Scoring:$$Score = (W_1 \cdot \text{Semantic\_Similarity}) + (W_2 \cdot \text{Ontology\_Match})$$(Where $W$ represents the weighted importance of each metric)🚧 Future Roadmap[ ] Vector Database Integration: Implementing ChromaDB for faster retrieval.[ ] Experience Quantification: Using NER to extract and verify years of experience.[ ] PDF Generation: Exporting a "Gap Analysis" report for the user.
+# AI Career Compass Pro (Advanced AI Version)
+
+This project implements **Hybrid Similarity** and **Deep Learning** for high-precision resume analysis.
+
+---
+
+### 🧠 Core Technologies
+
+1. **SBERT (Sentence-BERT):** Deep Learning transformer model used for generating **semantic embeddings** to understand context.
+
+2. **Hybrid Similarity:** Combines **Semantic Cosine Similarity** with **Ontology-based Lexical matching** for accurate scoring.
+
+3. **Skill Ontology:** Hierarchical mapping of raw skills to specific **industry domains** (e.g., Python -> Data Science).
+
+4. **Streamlit:** Advanced interactive UI for resume uploading and real-time analysis.
+
+---
+
+### 🛠️ Execution
+
+Follow these steps to set up and run the application:
+
+1. **Install requirements:**
+   ```bash
+   pip install -r requirements.txt
