@@ -1,0 +1,15 @@
+streamlit
+google-generativeai
+PyPDF2
+pdfplumber
+plotly
+sentence-transformers
+scikit-learn
+numpy
+matplotlib
+pandas
+transformers
+spacy
+xgboost
+textblob
+joblib
